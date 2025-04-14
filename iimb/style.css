@@ -1,0 +1,135 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4e54c8;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #4e54c8;
+    color: white;
+}
+
+/* Section Styling */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #4e54c8;
+    margin-bottom: 15px;
+}
+
+/* About Section */
+#about img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 10px 0 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Skills & Hobbies List */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* Contact Section */
+#contact a {
+    color: #4e54c8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
